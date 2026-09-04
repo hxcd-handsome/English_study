@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEP 英语词汇学习册</title>
+  <link rel="stylesheet" href="学习册样式.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero hero-wallpaper">
+      <div class="hero-copy">
+        <p class="kicker">PEP VOCABULARY • 每天进步一点点</p>
+        <h1>英语词汇学习册</h1>
+        <p>从小学三年级到高中三年级。选定年级和册别，直接看单词、音标和读音。</p>
+        <div class="habit"><span>✦</span> 今日目标：认识 10 个词，复习 10 个词。</div>
+      </div>
+      <aside class="hero-fill" aria-label="完美世界石昊图片填充区">
+        <figure class="fill-card fill-card-large">
+          <img src="https://haowallpaper.com/link/common/file/previewFileImg/18002629496065408" alt="完美世界 石昊 高清壁纸" loading="eager" decoding="async" />
+        </figure>
+        <figure class="fill-card fill-card-small">
+          <img src="https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/ac15ea865a37470dafabd4bef140cf3c.jpg" alt="完美世界 石昊 战斗场景" loading="eager" decoding="async" />
+        </figure>
+      </aside>
+    </section>
+
+    <section class="study-card" aria-labelledby="grade-heading">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">选择你的学习阶段</p>
+          <h2 id="grade-heading">小学三年级</h2>
+        </div>
+        <p class="progress" id="progress">1 / 10</p>
+      </div>
+      <nav class="grade-tabs" id="grade-tabs" aria-label="年级选择"></nav>
+      <div class="term-tabs" id="term-tabs" aria-label="册别选择"></div>
+
+      <section class="vocab-panel" aria-labelledby="vocab-heading">
+        <div class="audio-heading">
+          <div>
+            <p class="eyebrow">词表浏览</p>
+            <h3 id="vocab-heading">单词 / 音标 / 读音</h3>
+          </div>
+          <span>点击任意条目即可朗读</span>
+        </div>
+        <p class="audio-note" id="audio-note">点击下方词条即可播放标准英语读音。</p>
+        <div class="word-list" id="word-chips" aria-label="词汇列表"></div>
+      </section>
+
+      <section class="audio-card" aria-labelledby="manual-heading">
+        <div class="audio-heading">
+          <div>
+            <p class="eyebrow">边看边听</p>
+            <h3 id="manual-heading">手动播放</h3>
+          </div>
+          <span>浏览器语音</span>
+        </div>
+        <form class="manual-speaker" id="manual-speaker">
+          <label for="manual-word">没有找到的单词也可以在这里听读音：</label>
+          <input id="manual-word" type="text" inputmode="latin" autocomplete="off" placeholder="输入英文单词，例如 vocabulary" />
+          <button type="submit">播放读音</button>
+        </form>
+      </section>
+
+      <p class="encouragement" id="encouragement"></p>
+    </section>
+  </main>
+
+  <script src="词汇读音数据.js"></script>
+  <script src="词汇音标数据.js"></script>
+  <script src="词汇汉义数据.js"></script>
+  <script src="学习册脚本.js"></script>
+</body>
+</html>
